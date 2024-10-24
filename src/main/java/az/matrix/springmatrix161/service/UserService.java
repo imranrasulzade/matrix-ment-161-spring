@@ -11,4 +11,6 @@ public interface UserService {
     void update(UserDto userDto);
 
     List<UserDto> getUsers();
+
+    void updateV1(Long id);
 }

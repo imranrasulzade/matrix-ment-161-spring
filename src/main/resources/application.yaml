@@ -12,3 +12,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
+
+
+secret:
+  key: my_secret_key
