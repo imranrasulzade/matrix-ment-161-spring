@@ -1,18 +1,3 @@
 spring:
-  application:
-    name: spring-matrix-161
-
-
-  datasource:
-    url: jdbc:postgresql://localhost:5432/mj_161
-    username: postgres
-    password: 12345678
-    driver-class-name: org.postgresql.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: none
-
-
-secret:
-  key: my_secret_key
+  profiles:
+    active: dev

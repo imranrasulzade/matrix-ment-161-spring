@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-matrix-161
+
+  liquibase:
+    change-log: classpath:/liquibase/db.changelog-master.yaml
+    enabled: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/real
+    username: postgres
+    password: 12345678
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+
+secret:
+  key: my_secret_key
+

@@ -39,6 +39,10 @@ dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '3.3.3'
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.7.4'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.1'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+//    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '3.2.4'
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '4.1.1'
     implementation 'org.mapstruct:mapstruct:1.6.0'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.0'
 
@@ -47,7 +51,8 @@ dependencies {
 //    annotationProcessor 'org.projectlombok:lombok'
 
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
+// https://mvnrepository.com/artifact/org.liquibase/liquibase-core
+    implementation group: 'org.liquibase', name: 'liquibase-core', version: '4.23.1'
 
 //    https://mvnrepository.com/artifact/org.aspectj/aspectjrt
     runtimeOnly group: 'org.aspectj', name: 'aspectjrt', version: '1.9.22'

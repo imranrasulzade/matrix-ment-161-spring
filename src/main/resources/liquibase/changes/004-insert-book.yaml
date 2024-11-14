@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 12
+      author: imran
+      changes:
+        - insert:
+            tableName: book
+            columns:
+              - column:
+                  name: name
+                  value: 'Java'
+              - column:
+                  name: title
+                  value: 'Java foundation'
+              - column:
+                  name: photo_url
+                  value: 'mdvnjkvkd'
+              - column:
+                  name: year
+                  value: 2010
+              - column:
+                  name: status
+                  value: true
+
